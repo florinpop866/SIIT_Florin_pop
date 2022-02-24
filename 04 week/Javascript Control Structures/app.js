@@ -65,3 +65,14 @@ console.log("The number " + element + " appears " + count + " times.");
 console.log("END");
 
 // 6. Using nested control structures (doua for + if) for generate the following pattern.
+
+for (var i = 0; i < 4; i++) {
+    var array = [];
+    for (var j = 0; j < 4; j++) {
+        if (i === j || i === (j - 2) || j === (i - 2))
+            array += "0 ";
+        else
+            array += "1 ";
+    }
+    console.log(array)
+}
