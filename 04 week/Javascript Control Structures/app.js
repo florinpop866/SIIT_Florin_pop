@@ -61,8 +61,8 @@ for (var i = 0; i < list.length; i++) {
 
 console.log("The number " + element + " appears " + count + " times.");
 
+console.log("_______");
 
-console.log("END");
 
 // 6. Using nested control structures (doua for + if) for generate the following pattern.
 
@@ -76,3 +76,5 @@ for (var i = 0; i < 4; i++) {
     }
     console.log(array)
 }
+
+console.log("END");
