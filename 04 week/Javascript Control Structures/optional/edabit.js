@@ -69,11 +69,11 @@ function comp(str1, str2) {
 // Write a function that takes a string name and a number num (either 0 or 1) and return "Hello" + name if num is 1, otherwise return "Bye" + name.
 
 function sayHelloBye(name, num) {
+  var x = null;
   if (num == 1) {
-    return "Hello" + name;
-  } else if (num == 0) {
-    return "Bye" + name;
-  } else {
-    return "inputed number is not 0 or 1";
-  }
+    x = "Hello " + name.charAt(0).toUpperCase() + name.slice(1);
+    return x;
+  } else num == 0;
+  x = "Bye " + name.charAt(0).toUpperCase() + name.slice(1);
+  return x;
 }
