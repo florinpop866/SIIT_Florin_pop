@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+container {
+  display: flex;
+}
+
+.dogs {
+  font-weight: bold;
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+.dogs p {
+  width: 200px;
+}
+
+.beagle {
+  color: blue;
+}
+
+.beagle img {
+  border: 2px solid grey;
+  border-radius: 100px;
+  height: auto;
+  width: 230px;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.right {
+  margin-left: 100px;
+  border-left: 1px solid grey;
+}
+
+.right h2,
+h3,
+p {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.right p {
+  text-align: justify;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .beagle img {
+    width: 150px;
+  }
+
+  .dogs {
+    margin-left: 10px;
+    margin-right: -100px;
+  }
+  container {
+    font-size: 10x;
+  }
+}
+@media (max-width: 500px) {
+  .dogs {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-right: -170px;
+  }
+  .right img {
+    margin-left: 50px;
+  }
+  .right p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  container {
+    display: block;
+  }
+
+  .right {
+    margin-left: 50px;
+    border-left: 1px solid grey;
+  }
+  .dogs {
+    margin-left: 100px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .right p {
+    width: 110%;
+  }
+}
