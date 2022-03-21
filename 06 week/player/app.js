@@ -1,13 +1,13 @@
 const gameContainer = document.getElementById("gameContainer");
 const player = document.getElementById("player");
 
-var topGameContainer = gameContainer.offsetTop;
-var leftGameContainer = gameContainer.offsetLeft;
-var widthGameContainer = gameContainer.offsetWidth;
-var heightGameContainer = gameContainer.offsetHeight;
+let topGameContainer = gameContainer.offsetTop;
+let leftGameContainer = gameContainer.offsetLeft;
+let widthGameContainer = gameContainer.offsetWidth;
+let heightGameContainer = gameContainer.offsetHeight;
 document.addEventListener("keydown", function (e) {
   if (e.code == "ArrowDown") {
-    var top = player.offsetTop + 10;
+    let top = player.offsetTop + 10;
     if (top + player.offsetHeight < topGameContainer + heightGameContainer) {
       top = top + "px";
       player.style.top = top;
@@ -15,7 +15,7 @@ document.addEventListener("keydown", function (e) {
   }
 
   if (e.code == "ArrowLeft") {
-    var left = player.offsetLeft - 10;
+    let left = player.offsetLeft - 10;
     if (left > leftGameContainer) {
       left = left + "px";
       player.style.left = left;
@@ -23,7 +23,7 @@ document.addEventListener("keydown", function (e) {
   }
 
   if (e.code == "ArrowUp") {
-    var up = player.offsetTop - 10;
+    let up = player.offsetTop - 10;
     if (up > topGameContainer) {
       up = up + "px";
       player.style.top = up;
@@ -31,7 +31,7 @@ document.addEventListener("keydown", function (e) {
   }
 
   if (e.code == "ArrowRight") {
-    var rithgt = player.offsetLeft + 10;
+    let rithgt = player.offsetLeft + 10;
     if (rithgt + player.offsetWidth < leftGameContainer + widthGameContainer) {
       rithgt = rithgt + "px";
       player.style.left = rithgt;
