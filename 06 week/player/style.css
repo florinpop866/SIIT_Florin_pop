@@ -1,0 +1,42 @@
+#gameContainer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0;
+}
+
+#player {
+  position: absolute;
+  width: 40px;
+  left: 40px;
+  top: 50px;
+  margin: 0;
+  border: solid;
+  border-width: 1px;
+}
+.obstacle {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+}
+.obs1 {
+  left: 120px;
+  top: 160px;
+  background-color: blue;
+}
+
+.obs2 {
+  top: 280px;
+  left: 280px;
+  background-color: red;
+}
+.obs3 {
+  top: 90px;
+  left: 250px;
+  background-color:yellow;
+}
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
