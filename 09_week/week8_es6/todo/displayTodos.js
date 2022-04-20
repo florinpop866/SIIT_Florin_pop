@@ -1,4 +1,4 @@
-getTodos().then(function (todos) {
+getTodos().then((todos) => {
   const boxTodosHtml = document.getElementById("todo-box");
   const todoListHtml = document.getElementById("todo-list");
 
