@@ -5,7 +5,7 @@ let topGameContainer = gameContainer.offsetTop;
 let leftGameContainer = gameContainer.offsetLeft;
 let widthGameContainer = gameContainer.offsetWidth;
 let heightGameContainer = gameContainer.offsetHeight;
-document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", (e) => {
   if (e.code == "ArrowDown") {
     let top = player.offsetTop + 10;
     if (top + player.offsetHeight < topGameContainer + heightGameContainer) {
@@ -38,4 +38,3 @@ document.addEventListener("keydown", function (e) {
     }
   }
 });
-
