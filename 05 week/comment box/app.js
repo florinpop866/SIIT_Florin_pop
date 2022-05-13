@@ -1,16 +1,16 @@
-function createNewCommentDiv(userMail, commentText) {
+const createNewCommentDiv = (userMail, commentText) => {
   var newCommentDiv = document.createElement("div");
   newCommentDiv.classList.add("new-comment-div");
 
-  var newUserMail = document.createElement("h3");
+  let newUserMail = document.createElement("h3");
   newUserMail.classList.add("new-user-mail");
   newUserMail.innerText = userMail;
 
-  var newCommentText = document.createElement("p");
+  let newCommentText = document.createElement("p");
   newCommentText.classList.add("new-comment-text");
   newCommentText.innerText = commentText;
 
-  var deleteButton = document.createElement("button");
+  let deleteButton = document.createElement("button");
   deleteButton.classList.add("delete-button");
   deleteButton.innerText = "Delete";
 
@@ -18,30 +18,30 @@ function createNewCommentDiv(userMail, commentText) {
   newCommentDiv.appendChild(newCommentText);
   newCommentDiv.appendChild(deleteButton);
 
-  deleteButton.addEventListener("click", function (event) {
+  deleteButton.addEventListener("click", (event) => {
     deleteButton.parentElement.remove();
   });
   return newCommentDiv;
-}
+};
 
-var newCommentList = [];
+let newCommentList = [];
 
-for (var i = 0; i < newCommentList.length; i++) {
-  var newComment = newCommentList[i];
-  var newCommentListContainer = document.querySelector(".comment-list");
-  var newCommentDiv1 = createNewCommentDiv(
+for (let i = 0; i < newCommentList.length; i++) {
+  let newComment = newCommentList[i];
+  let newCommentListContainer = document.querySelector(".comment-list");
+  let newCommentDiv1 = createNewCommentDiv(
     newComment.userMail,
     newComment.commentText
   );
 }
 
-var btn = document.getElementById("add");
-var inputUserMail = document.getElementById("user-mail");
-var inputCommentText = document.getElementById("comment-text");
+let btn = document.getElementById("add");
+let inputUserMail = document.getElementById("user-mail");
+let inputCommentText = document.getElementById("comment-text");
 
-btn.addEventListener("click", function (event) {
-  var newCommentListContainer = document.querySelector(".comment-list");
-  var newCommentDiv1 = createNewCommentDiv(
+btn.addEventListener("click", (event) => {
+  let newCommentListContainer = document.querySelector(".comment-list");
+  let newCommentDiv1 = createNewCommentDiv(
     inputUserMail.value,
     inputCommentText.value
   );
